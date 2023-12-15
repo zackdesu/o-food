@@ -14,6 +14,7 @@ model Food {
   id          String   @id @default(auto()) @map("_id") @db.ObjectId
   name        String
   description String?
-  rate        Float
+  rate        Float?
+  price       Float
   createdTime DateTime @default(now())
 }
